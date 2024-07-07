@@ -12,7 +12,8 @@ The proposed algorithm solves a continuous-state POMDP in two phases.
 
 1) During the off-line training phase, a set of simulated experiences are collected from simulator. The simulated experiences are used to learn the Markovian transitions via Maximum Likelihood Estimation. Then the simulated trajectories are fed as training dataset into an LSTM (Long-short term memory) to identify a non-Markovian model of the belief dynamics.
   
-To turn on the simulator, please set training = 1 in main.m. 
+  To turn on the simulator, please set "training = 1" in main.m. 
+  When "training = 0", the toolbox can directly call the trained network, and skip the data collection and modeling phase. 
 
 2) The second phase of the code is on-line execution phase. During online execution, we simulate real-time observations according to the observation model. Then the projected Bayesian update is used to incorporate real-time measurements to update the belief state. Given the computed belief state, the POMDP is solved by a symbolic planner.
  
