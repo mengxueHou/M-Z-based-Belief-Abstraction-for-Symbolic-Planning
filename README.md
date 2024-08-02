@@ -7,7 +7,7 @@ continuous-state partially observable Markov decision processes (POMDP) problem.
 
 <img width="938" alt="Alg_overview" src="https://github.com/mengxueHou/M-Z-based-Belief-Abstraction-for-Symbolic-Planning/assets/68844002/1e48a1ba-2d52-4211-ad48-d1867eea3c57">
 
-# Tips on the current simulation implementation
+# Steps of implementing the current simulation
 
 The proposed algorithm solves a continuous-state POMDP in two phases. 
 
